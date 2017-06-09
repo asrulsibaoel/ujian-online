@@ -63,6 +63,15 @@
 
                     <div class="row">
                         <div class="form-group">
+                            {!! Form::label('semester', 'Semester', ['class' => 'control-label col-md-offset-2 col-md-2 col-sm-1 col-xs-12'])!!}
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                {!! Form::text('semester', null, ['class' => 'form-control col-md-7 col-xs-12', 'rows' => '5']) !!}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group">
                             {!! Form::label('password', 'Password', ['class' => 'control-label col-md-offset-2 col-md-2 col-sm-1 col-xs-12'])!!}
                             <div class="col-md-4 col-sm-4 col-xs-12">
                                 <input type="password" name="password" class="form-control">

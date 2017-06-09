@@ -24,7 +24,7 @@ class CreateSiswaRequest extends Request
     public function rules()
     {
         return [
-            'fullname' => 'required'
+            'nama_siswa' => 'required'
         ];
     }
 }

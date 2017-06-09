@@ -189,12 +189,10 @@
                 Technical Support
                 <p>
                     <br>
-                    <span style="font-size:11px;">Rifki alfaridzi</span><br>
-                    <a href="ymsgr:sendIM?rifki.alfaridzi"><img
-                                src="http://opi.yahoo.com/online?u=rifki.alfaridzi&amp;m=g&amp;t=1&amp;l=us" alt=""
-                                border="0"> </a><br>
-                    <a href="ymsgr:sendIM?rifki.alfaridzi"><i class="fa fa-mail"></i> </a><br>
-                </p></div>
+                    <span style="font-size:11px;">Asrul Sani Ariesandy</span><br>
+                    <a target="_blank" href="http://www.maleskewar.net"> www.maleskewar.net </a><br>
+                </p>
+            </div>
         </section>
     </aside>
     <div class="content-wrapper">
@@ -217,10 +215,10 @@
     <footer class="main-footer">
         <!-- To the right -->
         <div class="pull-right hidden-xs">
-            SMK INFORMATIKA DAN TELEKOMUNIKASI BOGOR
+            SMK NEGERI 5 MALANG
         </div>
         <!-- Default to the left -->
-        Made with <i class="fa fa-music text-danger"></i> and <i class="fa fa-heart text-danger"></i> from bogor,
+        Made with <i class="fa fa-music text-danger"></i> and <i class="fa fa-heart text-danger"></i> from Malang,
         indonesia
     </footer>
     <div class="control-sidebar-bg"></div>

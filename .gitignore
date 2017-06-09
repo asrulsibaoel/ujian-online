@@ -1,4 +1,8 @@
 /vendor
 /node_modules
+vendor/
+storage/app/
+storage/logs/
+storage/framework/
 Homestead.yaml
 .env

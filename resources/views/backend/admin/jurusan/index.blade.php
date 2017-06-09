@@ -52,7 +52,7 @@
       </form>
       @endforeach
     </table>
-    {!!$jurusan->render()!!}
+{{--    {!!$jurusan->render()!!}--}}
     @endif
   </div>
 </div>

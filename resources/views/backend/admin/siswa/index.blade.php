@@ -23,7 +23,8 @@
         </div>
         
         <div class="pull-right" style="margin-right: 10px">
-          {!! Form::select('Jurusan', $jurusan, null, ['class' => 'form-control btn-x', 'id' => 'jurusan'])!!}
+          <div class="col-md-6">{!! Form::text('kelas', null, ['class' => 'form-control btn-x', 'id' => 'kelas', 'placeholder' => 'kelas'])!!}</div>
+          <div class="col-md-6">{!! Form::select('jurusan', $jurusan, null, ['class' => 'form-control btn-x', 'id' => 'nama-jurusan', 'placeholder' => 'jurusan'])!!}</div>
         </div>
         <div class="pull-right" style="margin-right: 10px">
         </div>
@@ -44,7 +45,6 @@
         <td>Semester</td>
         <td>Kelas</td>
         <td>Jurusan</td>
-        <td>Status</td>
         <td width="15%"></td>
       </tr>
       @foreach($siswa as $daftar_siswa)
@@ -52,24 +52,17 @@
       <form action="{{url('index/manajemen/siswa/'.$daftar_siswa->nis)}}" method=POST>
         <input type=hidden value=delete name=_method>
         <tr>
-          <td>{{$daftar_siswa->id_siswa}}</td>
+          <td>{{$daftar_siswa->nis}}</td>
           <td>{{$daftar_siswa->nama_siswa}}</td>
           <td>{{$daftar_siswa->alamat}}</td>
           <td>{{$daftar_siswa->semester}}</td>
           <td>{{$daftar_siswa->kelas}}</td>
           <td>{{$daftar_siswa->jurusan->nama_jurusan}}</td>
-          <td>
-            {{--@if($daftar_siswa->status == 1)--}}
-            {{--<i style="color:green;font-weight: bolder">Active</i>--}}
-            {{--@else--}}
-            {{--<i style="color:red;font-weight: bolder">Not Active</i>--}}
-            {{--@endif--}}
-          <td>
             <button type="submit" onclick="return confirm('Are you sure you want to delete {{$daftar_siswa->fullname}} ?');" data-toggle="tooltip" data-placement="top" title="Delete" class="btn btn-danger pull-right" style="margin-left:5px">
             <span class="fa fa-remove"></span>
             </button>
             
-            <a href="{{route('index.manajemen.siswa.edit', array($daftar_siswa->id_siswa))}}" id="edit-user" data-toggle="tooltip" data-placement="top" title="Edit" class="btn color2 pull-right">
+            <a href="{{route('index.manajemen.siswa.edit', array($daftar_siswa->nis))}}" id="edit-user" data-toggle="tooltip" data-placement="top" title="Edit" class="btn color2 pull-right">
               <span class="fa fa-edit"></span>
             </a>
 
@@ -87,7 +80,7 @@
 <script>
 function search() {
 var kelas = $('#kelas').val();
-var jurusan = $('#jurusan').val();
+var jurusan = $('#nama-jurusan').val();
 $('#result').html('<img src={{asset("public/admin/img/loading.gif")}}>');
 $.ajax({
 type:"post",

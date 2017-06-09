@@ -3,7 +3,7 @@
 <title>Tambah Jurusan - UJIAN ONLINE</title>
 @stop
 @section('text-info')
-<h1>Tambah Mapel
+<h1>Tambah Jurusan
 </h1>
 <ol class="breadcrumb">
     <li><a href="{{url('index/dashboard')}}"><i class="fa fa-home"></i> Home</a></li>
@@ -35,7 +35,7 @@
                         <div class="form-group">
                             {!! Form::label('jurusan', 'Nama Jurusan ', ['class' => 'control-label col-md-offset-1 col-md-3 col-sm-1 col-xs-12'])!!}
                             <div class="col-md-4 col-sm-7 col-xs-12">
-                                {!! Form::text('jurusan', null, ['class' => 'form-control col-md-7 col-xs-12', 'rows' => '5']) !!}
+                                {!! Form::text('nama_jurusan', null, ['class' => 'form-control col-md-7 col-xs-12', 'rows' => '5']) !!}
                             </div>
                         </div>
                     </div>
